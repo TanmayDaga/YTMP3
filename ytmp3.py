@@ -35,7 +35,7 @@ def ytmp3(url, path):
     if not boolo:
         file = mp.VideoFileClip(path)
         file.audio.write_audiofile(
-            path + title + ".mp3")
+            path+'/' + title + ".mp3")
 
         #     Deleting video file
         print("Deleting file")
