@@ -101,8 +101,6 @@ class Browser(QMainWindow):
             print(foldername)
             os.system(f'python3.8 ytd.py {vid_url} {foldername}')
 
-
-
     def audio_download(self):
         aud_url = self.urlbar.text()
         dialog = QFileDialog()
@@ -111,10 +109,6 @@ class Browser(QMainWindow):
             foldername = dialog.selectedFiles()[0]
             print(foldername)
             os.system(f'python3.8 ytmp3.py {aud_url} {foldername}')
-
-
-
-
 
 
 if __name__ == '__main__':
